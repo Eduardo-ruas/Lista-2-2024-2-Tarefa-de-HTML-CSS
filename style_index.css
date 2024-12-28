@@ -8,19 +8,20 @@
 
 body {
     background-color: white;
-    font-family: "Oswald", serif;
+    font-family: "Karla", serif;
 
 }
 
 nav {
-    margin: 2rem;
+    margin: rem;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
 .img_logo_text {
-    width: 5rem;
+    width: 15rem;
+
 }
 
 ul, li{
@@ -41,20 +42,20 @@ a {
 }
 
 .links > ul > li > a:hover {
-    color: blue;
+    font-weight: bold;
     transition: 0.3s all;
 }
 
 .links > li{
-    margin: o 1rem 0 1rem;
+    margin: 0 1rem 0 1rem;
 }
 
 .login_nav > li > a {
-    columns: rgb(35, 35, 35);
+    columns: rgb(35, 35, 155);
     font-weight: 600;
-    outline: solid 1px rgb(35, 35, 35);
+    outline: solid 2px rgb(35, 35, 155);
     padding: 0.5rem;
-    border-radius: 5px;
+    border-radius: 2px;
 }
 
 .login_nav > li > a:hover {
@@ -66,58 +67,95 @@ a {
 }
 
 .links_4 > li {
-    margin: 0 1rem 0 5rem;
+    margin: 0 1rem 0 1rem;
 }
 
 .main_section {
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin-left: 5vh;
+    margin-top: 20vh;
+}
+.main_section > div{
+    height: 100vh;
 }
 
 .main_section > div > h1{
-    text-align: center;
-    font-size: 3rem;
+    color: black;
+    font-size: 4rem;
     width: 40rem;
     margin: auto;
-
+    line-height: 4rem;
+    word-spacing: -0.5;
 }
+
 .main_section > div > p{
-    text-align: center;
-    height: 10vh;
-    margin: 1rem auto 1rem auto;
+    color: black;
+    font-size: 1rem;
     width: 35rem;
-
+    margin: 2rem auto 2rem auto;
+    line-height: 2rem;
 }
 
-.noticias{
+.main_section > div > li{
+    margin: 3rem 1rem 3rem 1rem;
+}
+
+.main_section > div > li > a{
+    background-color: red;
+    color: white;
+    font-size: 3rem;
+    padding: 1.5rem;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.main_section > div > li > a:hover{
+    font-weight: bold;
+}
+
+.description{
     display: flex;
     margin: auto;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.noticias > div > div > h2 > li > a{
-    color: black;
-}
-
-.noticias > div > div > h2 > li > a:hover{
-    color: red;
-}
-
-.noticias > div > div > h3 > li > a{
-    color: black;
-}
-
-.noticias > div > div > h3 > li > a:hover{
-    color: red;
-}
-
-.noticias > div > div {
+.description > div {
     display: flex;
+    text-align: left;
+    justify-content: center;
+}
+
+.description> div > div > p{
+    font-size: 1rem;
+    width: 20rem;
+    margin-right: 1rem;
 }
 
 
 
+.imagem_tv{
+    height: 3rem;
+}
 
+.imagem_download{
+    height: 2rem;
+}
+
+.imagem_olho{
+    height: 1.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+    #burguer {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .login_nav{
+        display: none;
+    }
+    
+}

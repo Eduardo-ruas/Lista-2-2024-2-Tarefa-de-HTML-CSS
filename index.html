@@ -5,30 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link
      rel="shortcut icon" 
-    href="images/bc3bf64ebf3e288a8128b30037f783f4-icone-de-jornal-dobrado.png" 
+    href="images/Gemini_Generated_Image_q9whswq9whswq9wh.jpg" 
     type="image/x-icon">
     <title>site treinee</title>
     <link rel="stylesheet" href="style_index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link 
-    href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" 
-    rel="stylesheet">
+        href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Oswald:wght@200..700&display=swap" 
+        rel="stylesheet">
+    <link 
+        rel="stylesheet" 
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
-<body>
+<body onresize="verificaLargura()">
     <header>
         <nav>
             <ul class="links">
                 <li>
-                    <a href="index.html"><img class="img_logo_text" src="images/bc3bf64ebf3e288a8128b30037f783f4-icone-de-jornal-dobrado.png" alt="Jornal icon"></a>
+                    <a href="index.html"><img class="img_logo_text" src="images/moie.avif"></a>
                 </li>
-                <ul class="links_4">
-                    <li><a href="#">Politica</a></li>
-                    <li><a href="#">Economia</a></li>
-                    <li><a href="#">Entreterimento</a></li>
-                    <li><a href="#">Esporte</a></li>
+                <ul class="links_4" id="itens">
+                    <li><a href="#">Filmes</a></li>
+                    <li><a href="#">Series</a></li>
+                    <li><a href="#">Desenhos</a></li>
+                    <li><a href="#">Documentários</a></li>
                 </ul>  
             </ul>
+            <i class="material-symbols-outlined" id="burguer" onclick="clickMenu()">Menu</i>
             <ul class="login_nav">
                 <li><a href="#">Login ou Cadastre-se</a></li>
             </ul>
@@ -36,32 +40,52 @@
     </header>
     <section class="main_section">
         <div>
-            <h1>Notícias</h1>
+            <h1>Assista o que quiser, quando quiser.</h1>
             <p>
-                Últimas notícias do Brasil e do mundo, sobre política, economia, emprego, educação, saúde, meio ambiente, tecnologia, ciência, cultura e carros.
+               Imagine ter acesso a um catálogo infinito de filmes, séries e desenhos, onde você encontra tudo que ama e descobre novas paixões a cada clique. Com Playverse isso é realidade!
             </p>
+            <li><a href="#">ASSINE AGORA</a></li>
         </div>
-        <div class="noticias">
+        <div class="description">
             <div>
+                <div><img class="imagem_tv" src="images/tv.png" alt=""></div>
                 <div>
-                    <div><img src="images/dolar.jpg" alt="dolar"></div>
-                    <div>
-                        <h2><li><a href="#">Dólar sobe 2% na semana e fecha a R$ 6,19.</a></li></h1>
-                        <p>A moeda norte-americana subiu 0,26%, cotada a R$ 6,1932. O principal índice de ações da bolsa de valores fechou em queda de 0,67%, aos 120.269 pontos.</p>
-                    </div>  
-                </div>
+                    <h2>Aproveite na TV</h1>
+                    <p>Assista em Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, aparelhos de Blu-ray e outros dispositivos.</p>
+                </div> 
             </div>
-            <div>
+            <div>    
+                <div><img class="imagem_download" src="images/ok.webp" alt=""></div>
                 <div>
-                    <div><img src="images/Sem título.jpg" alt=""></div>
-                    <div>
-                        <h3><li><a href="#">Desemprego cai a 6,1% no trimestre terminado em novembro e segue no menor patamar da história, diz IBGE</a></li></h3>
-                        <p>Pelo segundo mês seguido, o país atingiu o percentual mais baixo de desocupados de toda a série histórica da PNAD Contínua, iniciada em 2012.</p>
-                    </div>  
-                </div>
+                    <h3>Baixe séries para assistir offline</h3>
+                    <p>Salve seus títulos favoritos e sempre tenha algo para assistir.</p>
+                </div>             
+            </div>
+            <div>        
+                <div><img class="imagem_olho" src="images/Eye-PNG-Image.png" alt=""></div>
+                <div>
+                    <h4>Assista onde quiser</h4>
+                    <p>Assista a quantos filmes e séries quiser no celular, tablet, laptop e TV.</p>
+                </div>       
             </div>
         </div>
-        
     </section>
+    <script>
+        function clickMenu(){
+            if(itens.style.display == "block"){
+                itens.style.display = "none";
+            } else {
+                itens.style.display = "block";
+            }
+        }
+
+        function verificaLargura(){
+            if(window.innerWidth >=1024) {
+                itens.style.display = "flex"
+            } else{
+                itens.style.display = "none"
+            }
+        }
+    </script>
 </body>
 </html>
